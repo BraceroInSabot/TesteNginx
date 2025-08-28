@@ -3,4 +3,4 @@ from django.views.decorators.http import require_http_methods
 
 @require_http_methods(["GET"])
 def home(request):
-    return render(request, "template/home.html")
+    return render(request, template_name="home.html")
